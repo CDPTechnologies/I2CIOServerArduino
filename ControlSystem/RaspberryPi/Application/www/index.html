@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  
+  <!-- Page Title -->
+  <title>Servo control</title>
+  
+  <!-- turretcss CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/turret.min.css" crossorigin="anonymous">
+
+  <!-- Vue js  -->
+  <script src="./js/vue.min.js"></script>
+    <!-- Some custom vue components  -->
+    <script src="./js/vue-components/cdpbutton.js"></script>
+    <script src="./js/vue-components/cdptoggle.js"></script>
+    <script src="./js/vue-components/cdprange.js"></script>
+
+  <!-- StudioAPI  -->
+  <script src="./js/studioapi/long.min.js"></script>
+  <script src="./js/studioapi/bytebuffer.min.js"></script>
+  <script src="./js/studioapi/protobuf.min.js"></script>
+  <script src="./js/studioapi/studioapi.js"></script>
+    <!-- Setting up communication and routing using StudioAPI  -->
+    <script src="./js/model.js" defer></script>
+
+  </head>
+
+<body>
+  <div id="app" class="grid">
+
+    <section class="container">
+      <h1 class="big">Servo control</h1>
+      <p>Here you  can set the servo position in "microseconds", 1000-2000μs is the normal range for a servo.</p>
+      <p>The middle point is usually arround 1500μs.</p>
+      <p>For servos with continous rotation 1500μs is stop while 1000μs and 2000μs is full rotation in each direction.</p>
+      
+      <h3 class="small-caps">Servo: {{microseconds.value}} μs</h3>    
+      <CDPRange
+        :interactor=microseconds
+        setclass="range-xl"
+        minimum="1000"
+        maximum="2000"
+        stepsize="100"
+      ></CDPRange>
+    </section>
+
+  </div>
+</body>
+</html>
