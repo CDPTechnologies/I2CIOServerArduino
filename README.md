@@ -21,6 +21,13 @@ NB: If you are on a fresh install you should change the default "username: pi, p
 
 
 # Wiring the system:
+
+**Raspberry Pi Zero**
+![Image of wiring the PIZ](https://gitlab.com/espenakker/CDPStudio-I2C-RaspberryPi-Arduino-ServoControl/raw/master/diagramPiZero.png)
+
+**Raspberry Pi 3**
+![Image of wiring the PI3](https://gitlab.com/espenakker/CDPStudio-I2C-RaspberryPi-Arduino-ServoControl/raw/master/diagramPi3.png)
+
 ## Raspberry Pi
 In order for the system to work out of the box you need to wire the I2C pins from the RaspberryPi to the Arduino. You will also need to wire together the ground pins.
 
