@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "I2CServoSlave.ino",
+    "port": "COM3"
+}
