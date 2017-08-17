@@ -6,7 +6,7 @@ When the files are in the correct folder you can Load it in via the file menu, o
 
 
 # Instructions for the Arduino project files:
-In the folder I2CServoSlave you can find a file "I2CServoSlave.ino". THis file can be opened and uploaded to the arduino using the Arduino IDE.
+In the folder I2CServoSlave you can find a file "I2CServoSlave.ino". This file can be opened and uploaded to the arduino using the Arduino IDE.
 
 
 # Setting up I2C and SSH on Raspberry Pi:
